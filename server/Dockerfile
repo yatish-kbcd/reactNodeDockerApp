@@ -10,9 +10,6 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the React build files
-COPY ../client/build ./client-build
-
 # Copy the rest of the application code
 COPY . .
 
