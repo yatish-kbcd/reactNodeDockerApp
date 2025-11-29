@@ -5,8 +5,14 @@ const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: "*", 
+  origin: [
+    "http://167.71.238.99", 
+    "http://167.71.238.99:3001"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
+
 
 app.use(express.json());
 
