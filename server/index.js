@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'client-build')));
 
 // Simple API route
 app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from backend!' });
+  res.json({ message: 'Hello from backendddd!' });
 });
 
 // Catch-all handler: send back React's index.html file for client-side routing
